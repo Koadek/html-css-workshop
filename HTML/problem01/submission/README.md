@@ -1,1 +1,1 @@
-Place the screenshot image file here
+Place the screenshot 
