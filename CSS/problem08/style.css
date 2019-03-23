@@ -1,0 +1,23 @@
+.section {
+    margin: 100px;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.category  {
+    
+    display: flex;
+}
+
+.picture  {
+    height: 100px;
+}
+
+.race{
+    border-style: dashed;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
