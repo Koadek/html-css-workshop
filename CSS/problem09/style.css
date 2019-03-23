@@ -7,13 +7,17 @@ img {
 }
 
 #img1 {
+  
 }
 
 #img2 {
+  display: none;
 }
 
 #img3 {
+   visibility: hidden;
 }
 
 #img4 {
+
 }

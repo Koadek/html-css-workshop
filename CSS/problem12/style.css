@@ -1,0 +1,22 @@
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: Poppins, sans-serif;
+}
+
+.bar {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
