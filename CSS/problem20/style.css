@@ -5,21 +5,40 @@ body {
 .container {
   display: grid;
   min-height: 100vh;
+  grid-auto-rows: auto 1fr auto;
+  grid-template-areas: "nav" "main" "footer";
+
 }
 
 .nav {
   height: 50px;
   background-color: rebeccapurple;
+  grid-area: nav;
 }
 
 .aside {
   background-color: forestgreen;
+  grid-area: aside;
+  display: none;
 }
 
 .main {
+  grid-area: main;
+  text-align: center;
 }
 
 .footer {
   height: 100px;
   background-color: midnightblue;
+  grid-area: footer;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-areas: "nav nav nav" "aside main main" "aside footer footer"
+  }
+
+  .aside {
+    display: block;
+  }
 }

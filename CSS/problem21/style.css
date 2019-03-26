@@ -1,17 +1,26 @@
 .header {
+  text-align: center;
 }
 
 #facts {
+  border-spacing: 0;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 20px;
+  width: 100%;
 }
 
-tr {
+tr:nth-child(even) {
+  background-color: #e6e6e6;
 }
 
 th {
+  text-align: left;
 }
 
 td,
 th {
+  padding: 10px;
 }
 
 h3 {
@@ -20,9 +29,14 @@ h3 {
 
 /* Using CSS grid */
 .links {
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0;
+  display: grid;
 }
 
 .links > li {
+  list-style-type: none;
 }
 
 /* 
@@ -31,11 +45,29 @@ You can comment / uncomment this code using cmd+/
 */
 /* 
 .links {
+  justify-content: space-between;
+  padding: 0;
+  display: flex;
 }
 
 .links > li {
+  flex: 1;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+.links > li:last-child {
+  margin-right: 0;
 }
 */
 
 .links a {
+  background-color: dodgerblue;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
 }

@@ -10,4 +10,32 @@ body {
   color: #fff;
   text-decoration: none;
   display: inline-block;
+  position: relative;
+  padding: 20px;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.menu-list {
+  margin: 0;
+  padding:0;
+}
+
+.nav-dropdown:hover > .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  background-color: #03a9f4;
+}
+
+.menu-list > li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.menu-list > li:hover {
+  background-color: dodgerblue;
 }
